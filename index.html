@@ -1,36 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzafäscht</title>
   <link rel="stylesheet" href="style.css">
-  
 </head>
 
 <body>
   <header>
-    <h1>Pizzafäscht</h1>
-    <p>21st and 22nd June 2024</p>
+    <a href="#startseite" class="logo">Pizzafäscht</a>
+    <nav>
+      <a href="#startseite">Startseite</a>
+      <a href="#programm">Programm</a>
+      <a href="#bildergalerie">Bildergalerie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
-
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Insert information about the Pizzafäscht event here.</p>
-    </section>
-
-    <section>
-      <h2>Images</h2>
-      <img src="path/to/image1.jpg" alt="Image 1">
-      <img src="path/to/image2.jpg" alt="Image 2">
-      <!-- Add more images as needed -->
-    </section>
-  </main>
-
+  <section id="startseite">
+    <img src="images/header.jpg" alt="Pizzafäscht">
+    <h1>Pizzafäscht</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Nullam eget neque
+      tortor. Vivamus luctus enim sit amet lectus aliquam, eget tincidunt dui lobortis.</p>
+    <a href="#programm" class="button">Mehr erfahren</a>
+  </section>
+  <section id="programm">
+    <h2>Programm</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Nullam eget neque
+      tortor. Vivamus luctus enim sit amet lectus aliquam, eget tincidunt dui lobortis.</p>
+    <table>
+      <tr>
+        <th>Uhrzeit</th>
+        <th>Veranstaltung</th>
+      </tr>
+      <tr>
+        <td>12:00 Uhr</td>
+        <td>Pizza-Eröffnung mit Live-Musik</td>
+      </tr>
+      <tr>
+        <td>14:00 Uhr</td>
+        <td>Pizza-Wettbewerb für Kinder</td>
+      </tr>
+      <tr>
+        <td>16:00 Uhr</td>
+        <td>Pizza-Show mit einem Pizzabäckermeister</td>
+      </tr>
+      <tr>
+        <td>18:00 Uhr</td>
+        <td>Live-Musik und gemütliches Beisammensein</td>
+      </tr>
+    </table>
+  </section>
+  <section id="bildergalerie">
+    <h2>Bildergalerie</h2>
+    <ul>
+      <li><img src="images/image1.jpg" alt="Pizza"></li>
+      <li><img src="images/image2.jpg" alt="Pizza"></li>
+      <li><img src="images/image3.jpg" alt="Pizza"></li>
+      <li><img src="images/image4.jpg" alt="Pizza"></li>
+    </ul>
+  </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Nullam eget neque
+      tortor. Vivamus luctus enim sit amet lectus aliquam, eget tincidunt dui lobortis.</p>
+    <form action="#">
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="E-Mail">
+      <textarea name="message" placeholder="Nachricht"></textarea>
+      <button type="submit">Senden</button>
+    </form>
+  </section>
   <footer>
-    <p>&copy; 2024 Pizzafäscht. All rights reserved.</p>
+    <p>Copyright &copy; 2023 Pizzafäscht</p>
   </footer>
 </body>
 
