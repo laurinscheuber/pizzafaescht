@@ -1,42 +1,6 @@
-/* Allgemeine Styles */
-
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Header */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: #fff;
+.coming-soon {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%);
 }
