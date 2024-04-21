@@ -31,6 +31,7 @@ body {
   padding: 40px 20px;
 }
 
+
 .nav {
   width: 100%;
   position: fixed;
@@ -65,13 +66,67 @@ body {
   color: #fd9b02;
   text-decoration: none;
 }
+.section.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Define the animation */
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Create a new class that applies the animation */
+.animate {
+  animation-name: slideInFromBottom;
+  animation-duration: 2s; /* Adjust this to change the speed of the animation */
+}
 
 @media (min-width: 768px) {
   .hero-content, .footer {
     max-width: 960px;
     margin: 0 auto;
   }
+
+  .section.center {
+    flex-direction: column;
+  }
+
 }
 
 
+@font-face {
+  font-family: 'edo';
+  src: url('Fonts/edo.ttf') format('truetype');
+}
+
+.h1, h1 {
+  font-size: 8rem;
+  margin-bottom: 6rem;
+  margin-top: 10rem;
+  font-family: 'edo', sans-serif;
+}
+
+.h2, h2 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-family: sans-serif;
+}
+
+.h3, h3 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-family: sans-serif;
+}
 

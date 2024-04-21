@@ -1,5 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Mon Apr 01 2024 15:19:15 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html>
 <html data-wf-page="65ef058086228e8aec11b807" data-wf-site="65ef058086228e8aec11b7cd" lang="de">
 <head>
   <meta charset="utf-8">
@@ -33,16 +32,16 @@
     </div>
   </div>
   <div class="section center">
-    <div data-w-id="6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2" style="-webkit-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-content">
-      <h1 class="heading-3">Pizzafäscht 2024</h1>
+    <div class="animate">
+      <h1 class="heading-3">Pizzafaescht 2024</h1>
       <h3 class="hero-subhead">Samstag &amp; Sonntag</h3>
       <h2 class="hero-subhead">21. &amp; 22. JUNI</h2>
-        <div id="countdown" style="color: #fd9b02; font-size: 5em; padding-top: 50px;"></div>
+        <div id="countdown" style="color: #fd9b02; font-size: 7em; padding-top: 50px; font-family: 'edo', sans-serif"></div>
     </div><img class="hero-image" src="images/pizzaIcon.png" width="Auto" alt="" style="-webkit-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 479px) 80vw, (max-width: 991px) 70vw, 800px" data-w-id="77e69727-c455-8e07-0990-833a661c94ea" srcset="images/pizzaIcon-p-500.png 500w, images/pizzaIcon-p-800.png 800w, images/pizzaIcon-p-1080.png 1080w, images/pizzaIcon.png 1122w">
   </div>
   <section><img src="images/pifae24_map_light.jpg" loading="lazy" width="Auto" height="Auto" alt="" srcset="images/pifae24_map_light-p-500.jpg 500w, images/pifae24_map_light-p-800.jpg 800w, images/pifae24_map_light-p-1080.jpg 1080w, images/pifae24_map_light-p-1600.jpg 1600w, images/pifae24_map_light-p-2000.jpg 2000w, images/pifae24_map_light.jpg 2288w" sizes="(max-width: 2288px) 100vw, 2288px" class="image-5"></section>
   <div class="section wide-copy">
-    <div data-w-id="8cf47482-19f1-1f52-25ba-910a60bc91de" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="wrap">
+    <div class="animate">
       <h2>Wir freuen uns auf dich!</h2>
     </div>
     <div class="wrapper"></div>
@@ -85,6 +84,23 @@
               document.getElementById("countdown").innerHTML = "EVENT HAS STARTED!";
           }
       }, 1000);
+
+      // Select the element to observe
+      var target = document.querySelector('.wrap h2');
+
+      // Create an intersection observer
+      var observer = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(entry => {
+              // If the element is in the viewport, add the animation class
+              if(entry.isIntersecting) {
+                  entry.target.classList.add('animate');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.1 });  // Adjust the threshold value as needed
+
+      // Start observing the target element
+      observer.observe(target);
   </script>
 </body>
 </html>
