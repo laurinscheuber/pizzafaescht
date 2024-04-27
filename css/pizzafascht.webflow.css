@@ -72,6 +72,12 @@ body {
   align-items: center;
 }
 
+.image-5 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 /* Define the animation */
 @keyframes slideInFromBottom {
@@ -91,17 +97,7 @@ body {
   animation-duration: 2s; /* Adjust this to change the speed of the animation */
 }
 
-@media (min-width: 768px) {
-  .hero-content, .footer {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 
-  .section.center {
-    flex-direction: column;
-  }
-
-}
 
 
 @font-face {
@@ -130,3 +126,50 @@ body {
   font-family: sans-serif;
 }
 
+@media (min-width: 768px) {
+  .hero-content, .footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .section.center {
+    flex-direction: column;
+  }
+
+  .image-5 {
+    width: auto;
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    line-height: normal;
+    margin-bottom: auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin: auto;
+    line-height: normal;
+  }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 1em;
+      margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+  .section.center {
+    flex-direction: column;
+  }
+
+  #countdown {
+    font-size: 2.5rem !important;
+  }
+}
