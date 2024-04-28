@@ -104,16 +104,11 @@ a {
 
 
 
-@font-face {
-  font-family: 'edo';
-  src: url('Fonts/edo.ttf') format('truetype');
-}
-
 .h1, h1 {
   font-size: 8rem;
   margin-bottom: 6rem;
   margin-top: 10rem;
-  font-family: 'edo', sans-serif;
+  font-family: sans-serif;
 }
 
 .h2, h2 {
